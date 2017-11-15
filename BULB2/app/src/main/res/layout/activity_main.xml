@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#198BEC"
+    tools:context="com.example.jlazaro.bulb.MainActivity">
+
+    <TextView
+        android:id="@+id/brightness"
+        android:layout_width="137dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Brightness"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBrightnessUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home" />
+
+    <TextView
+        android:id="@+id/power"
+        android:layout_width="155dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="256dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Power"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBrightnessUp"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBrightnessDown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/plus" />
+
+    <ImageButton
+        android:id="@+id/btnBrightnessDown"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="57dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/minus" />
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="161dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="134dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Input a Color "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLightColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBrightnessUp" />
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginStart="101dp"
+        android:text="Connect a Bluetooth Device"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="56dp"
+        android:ems="50"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnAlarm"
+        android:layout_width="69dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="111dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/clock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMusic"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Link To Other Apps"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAlarm"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMode"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="98dp"
+        android:src="@drawable/byrcolorwheel"
+        app:layout_constraintBottom_toTopOf="@+id/btnBluetooth"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/modes"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Modes"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/link" />
+
+    <ImageButton
+        android:id="@+id/btnMusic"
+        android:layout_width="69dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="70dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btnBluetooth"
+        app:layout_constraintEnd_toStartOf="@+id/btnMode"
+        app:layout_constraintTop_toBottomOf="@+id/link"
+        app:srcCompat="@drawable/play" />
+
+    <ImageButton
+        android:id="@+id/btnLightColor"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="131dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/modes"
+        app:layout_constraintEnd_toStartOf="@+id/btnBackgroundColor"
+        app:layout_constraintStart_toEndOf="@+id/btnBrightnessDown"
+        app:srcCompat="@drawable/light" />
+
+    <ImageButton
+        android:id="@+id/btnBackgroundColor"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/modes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color"
+        app:srcCompat="@drawable/background" />
+
+    <ImageButton
+        android:id="@+id/btnOn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="95dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/color"
+        app:layout_constraintEnd_toStartOf="@+id/btnOff"
+        app:layout_constraintStart_toEndOf="@+id/brightness"
+        app:srcCompat="@drawable/on" />
+
+    <ImageButton
+        android:id="@+id/btnOff"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="27dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power"
+        app:srcCompat="@drawable/off" />
+
+
+</android.support.constraint.ConstraintLayout>
