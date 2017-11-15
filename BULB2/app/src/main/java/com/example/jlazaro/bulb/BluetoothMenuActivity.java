@@ -40,6 +40,7 @@ public class BluetoothMenuActivity extends AppCompatActivity implements AdapterV
     ListView lvDevices;
     Button btnDiscover;
     Button btnConnect;
+    Button btnBack;
 
     //Broadcast Reciever for listing devices that arent paired
     private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver() {
@@ -97,6 +98,7 @@ public class BluetoothMenuActivity extends AppCompatActivity implements AdapterV
 
         btnDiscover = (Button) findViewById(R.id.btnDiscover);
         btnConnect = (Button) findViewById(R.id.btnConnect);
+        btnBack = (Button) findViewById(R.id.btnBack);
         lvDevices = (ListView) findViewById(R.id.lvNewDevices);
         mBTDevices = new ArrayList<>();
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -104,6 +106,14 @@ public class BluetoothMenuActivity extends AppCompatActivity implements AdapterV
 
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_BOND_STATE_CHANGED);
         registerReceiver(mBroadcastReceiver2, filter);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BluetoothMenuActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnDiscover.setOnClickListener(new View.OnClickListener() {
             @Override
