@@ -1,4 +1,4 @@
-/*
+/* Text file of arduino code
 Bluetooth HC-05
 Arduino Uno
 LED

@@ -1,10 +1,12 @@
-/*
+/* 
+List of items
 Bluetooth HC-05
 Arduino Uno
 LED
 Resistor 220 Ohm
 Breadboard
 
+Instructions
 Bluetooth    Arduino
   Rxd   --->  Txd
   Txd   --->  Rxd
