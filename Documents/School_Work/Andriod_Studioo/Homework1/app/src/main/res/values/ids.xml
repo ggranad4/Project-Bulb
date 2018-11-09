@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="et_search_box" type="id" />
+    <item name="tv_url_display" type="id" />
+    <item name="tv_github_search_results_json" type="id" />
+</resources>
